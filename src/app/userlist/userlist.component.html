@@ -1,0 +1,11 @@
+<div>
+  <div>
+    <h2>User List</h2>
+    <button>Add User</button>
+    <button [routerLink]="''">Back</button>
+  </div>
+  <div>
+    <dx-data-grid [dataSource]="userListDs" [columns]="['Name', 'Role', 'CompanyName']" [showBorders]="true">
+    </dx-data-grid>
+    <div>
+    </div>

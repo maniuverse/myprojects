@@ -1,0 +1,28 @@
+<div>
+  <h4>Login</h4>
+  <!-- forms -->
+  <div>
+    <form [formGroup]="loginForm">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name">
+      </div>
+      <br>
+      <div>
+        <label for="password">Password: </label>
+        <input type="password" id="password" formControlName="password">
+      </div>
+      <br>
+      <div>
+        <button (click)="onSubmit()">Login</button>
+        <button (click)="onClear()">Clear</button>
+      </div>
+      <br>
+      <div>
+        <button>Reset</button>
+        <button>Signup</button>
+      </div>
+    </form>
+
+  </div>
+</div>
